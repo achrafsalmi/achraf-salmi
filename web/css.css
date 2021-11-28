@@ -1,0 +1,390 @@
+
+.inputfile {
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+.inputfile + label {
+    font-size: 1.25em;
+    font-weight: 700;
+    color: white;
+    background-color: black;
+    display: inline-block;
+}
+
+.inputfile:focus + label,
+.inputfile + label:hover {
+    background-color: red;
+}
+.inputfile + label {
+	cursor: pointer; /* "hand" cursor */
+}
+
+html {                 
+    font-size: 62.5%;
+}
+
+
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+
+    color: #333;
+    background-color: white;
+    margin:0;
+}
+.right-div .p {
+    
+        background-color: #F8F8FF;
+    padding: 20px;
+    border-radius: 5px ;
+    box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
+    border-radius: 10px;
+    border: 6px solid #2a80b9;
+}
+
+
+.left-div
+{
+    float:left;
+    height: 400px;
+    border-radius:25px;
+    width:65%;
+    margin: 10px auto;
+    padding: 10px 25px;
+    padding-top: 50px;
+}
+.imgt{
+    margin-bottom: -7px;
+    margin-left: 15px;
+}
+.right-div
+{
+    float:right;
+    height: 400px;
+    border-radius:25px;
+    width:25%;
+    margin: 10px auto;
+    padding: 10px 25px;
+    padding-top: 50px;
+}
+.top-header , .logo-header , .list-menu ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+a {
+    color: #428bca;
+    text-decoration: none;
+}
+a:hover,
+a:focus {
+    color: #2a6496;
+    text-decoration: underline;
+}
+
+/*---------------------------------------------*/
+
+.top-header {
+    border-bottom: 1px solid #dddddd;
+}
+
+.top-header .top-header-left a {
+    border-left: 1px solid #dddddd;
+    padding: 10px 15px;
+    display: inline-block;
+    float: right;
+    text-align: right;
+}
+.top-header .top-header-left a:last-child {
+    border-right: 1px solid #dddddd;
+}  
+
+
+.top-header .top-header-right a {
+    border-left: 1px solid #dddddd;
+    padding: 10px 15px;
+    display: inline-block;
+    float: right;
+    text-align: right;
+}
+.top-header .top-header-right a:last-child {
+    border-right: 1px solid #dddddd;
+}  
+
+.product-content .full-row{
+    margin-top: 20px;
+}
+
+.container {
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: 0%;
+    margin-left: auto;
+
+}
+
+.container:before,
+.container:after,
+.modal-footer:before,
+.modal-footer:after {
+    display: table;
+    content: " ";
+    clear: both;
+}
+
+
+
+/* ------------------------------------------------*/
+
+.logo-header img {
+    width: 400px;
+    height: 100px;
+    margin-left : auto;
+    margin-right: auto ;
+    display: block;   
+}
+
+.logo-header {
+    padding: 5px 0;
+}
+
+/*---------------------------------------------*/
+
+.list-menu-intervention {
+    background-color: #2a80b9;        /*l menu e zar9a */
+}
+
+.list-menu-intervention a {
+    color: white;  /* l ktiba */ 
+}
+
+.list-menu-intervention ul li {
+    display: inline-block;
+    padding: 20px 35px;
+    border-left: 1px solid #3598db;
+}
+
+     
+
+
+.list-menu-intervention ul li a {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.list-menu-intervention ul li a:hover {
+    color: #dcecf7;
+}
+
+
+.list-menu {
+    background-color: #2a80b9;        /*l menu e zar9a */
+}
+
+.list-menu a {
+    color: white;  /* l ktiba */ 
+}
+
+.list-menu ul li {
+    display: inline-block;
+    padding: 20px 35px;
+    border-left: 1px solid #3598db;
+}
+
+
+
+.list-menu ul li a {
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.list-menu ul li a:hover {
+    color: #dcecf7;
+}
+
+.list-menu ul li  img {
+    width: 10px;
+    
+    
+}
+
+
+
+/***************************************/
+/* connexion */
+/***************************************/
+
+
+
+.login {
+    margin: 20px auto;
+    width: 300px;
+    margin-left: auto;
+    margin-top: 40px;
+
+}
+.login-screen {
+    background-color: #F8F8FF;
+    padding: 20px;
+    border-radius: 5px ;
+    box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
+    border-radius: 10px;
+    border: 6px solid #2a80b9;
+}
+.photo-screen {
+    background-color: #F8F8FF;
+    padding: 20px;
+    border-radius: 5px ;
+    box-shadow: 1px 1px 25px rgba(0, 0, 0, 0.35);
+    border-radius: 10px;
+    border: 6px solid #2a80b9;
+}
+
+.title {
+    text-align: center;
+    color: #777;
+}
+
+.login-form {
+    text-align: center;
+}
+.text-box-cnx {
+    margin-bottom: 10px;
+}
+
+input {
+    text-align: center;
+    background-color: #ECF0F1;
+    border: 2px solid transparent;
+    border-radius: 3px;
+    font-size: 16px;
+    font-weight: 200;
+    padding: 10px 0;
+    width: 250px;
+    transition: border .5s;
+}
+
+input:focus {
+    border: 2px solid #3498DB;
+    box-shadow: none;
+}
+
+.btn {
+    border: 2px solid transparent;
+    background: #2a80b9;
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 25px;
+    padding: 10px 0;
+    text-decoration: none;
+    text-shadow: none;
+    border-radius: 3px;
+    box-shadow: none;
+    transition: 0.25s;
+    display: block;
+    width: 250px;
+    margin: 0 auto;
+}
+
+.btn:hover {
+    background-color: #2980B9;
+}
+/***************************************/
+/* reclamation */
+/***************************************/
+.form-reclamation{
+    max-width: 500px;
+    padding: 20px 12px 10px 20px;
+    font: 13px Arial, Helvetica, sans-serif;
+    margin-left: 25%;
+}
+
+.form-reclamation-heading{
+    font-weight: bold;
+    font-style: italic;
+    border-bottom: 2px solid #ddd;
+    margin-bottom: 20px;
+    font-size: 15px;
+    padding-bottom: 3px;
+}
+.form-reclamation label{
+    display: block;
+    margin: 0px 0px 15px 0px;
+    margin-left: 15%;
+}
+
+
+.form-reclamation label > span{
+    width: 100px;
+    font-weight: bold;
+    float: left;
+    padding-top: 8px;
+    padding-right: 5px;
+}
+.form-reclamation span.required{
+    color:red;
+}
+.form-reclamation input.input-field, 
+.form-reclamation .textarea-field, 
+.form-reclamation .select-field{
+    box-sizing: border-box;   
+    border: 1px solid #C2C2C2;
+    box-shadow: 1px 1px 4px #EBEBEB;
+    border-radius: 3px;
+    padding: 7px;
+
+}
+
+.form-reclamation .input-field:focus, 
+.form-reclamation .tel-number-field:focus, 
+.form-reclamation .textarea-field:focus,  
+.form-reclamation .select-field:focus{
+    border: 1px solid black;
+}
+.form-reclamation .textarea-field{
+    height:80px;
+    width: 55%;
+}
+
+.form-reclamation input[type=submit]{
+
+    padding: 8px 15px 8px 15px;
+    background: #2a80b9;
+    color: #fff;
+    box-shadow: 1px 1px 4px #DADADA;
+
+}
+
+.form-reclamation input[type=submit]:hover{
+    background: #2a80b9;
+    color: #fff;
+}
+
+.form-reclamation input[type=reset]{
+
+    padding: 8px 15px 8px 15px;
+    background: #2a80b9;
+    color: #fff;
+    box-shadow: 1px 1px 4px #DADADA;
+
+}
+
+.form-reclamation input[type=reset]:hover{
+    background: #2a80b9;
+    color: #fff;
+}
+.logo-menu{
+    align: left;
+    width: 25px;
+    height: 25px;
+    vertical-align: middle;
+    margin-top: -6px; 
+}
+/*********************/
