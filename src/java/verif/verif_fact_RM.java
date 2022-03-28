@@ -164,7 +164,7 @@ reclamation.add(objet);
            // PreparedStatement ps = connection_historadius.getConnection().prepareStatement(sql);
            // PreparedStatement ps = cnx_radius.getConnection().prepareStatement(sql);
             //PreparedStatement ps = connection_histo_mois.getConnection().prepareStatement(sql);
-             PreparedStatement ps = cnx_radius.getConnection().prepareStatement(sql);
+             PreparedStatement ps = connection_radius.getConnection().prepareStatement(sql);
             
             res1 = ps.executeQuery();
             while (res1.next()) {
@@ -195,7 +195,7 @@ reclamation.add(objet);
            // PreparedStatement ps = connection_radius.getConnection().prepareStatement(sql);
            //PreparedStatement ps = connection_historadius.getConnection().prepareStatement(sql);
            //PreparedStatement ps = connection_historadius.getConnection().prepareStatement(sql);
-            PreparedStatement ps = cnx_radius.getConnection().prepareStatement(sql);
+            PreparedStatement ps = connection_radius.getConnection().prepareStatement(sql);
             res1 = ps.executeQuery();
             while (res1.next()) {
                 String histo, stop = null;

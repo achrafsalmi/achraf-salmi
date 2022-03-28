@@ -31,6 +31,8 @@ import model.ip;
 import model.personne;
 import model.status_cnx;
 import org.apache.commons.lang3.StringUtils;
+import ssh_LNS_new.clear_bel_lns;
+import ssh_LNS_new.clear_war_lns;
 
 public class persImpli implements persInterface {
 
@@ -128,8 +130,11 @@ public class persImpli implements persInterface {
             i = i + 1;
         }
         int o = Integer.parseInt(n);
+        //o tel adsl
         persImpli2 login = new persImpli2();
+        //mac  login
         mac = login.rech_login(o);
+        
         SSHConnectionJava ssh3 = new SSHConnectionJava();
         com_reactivation test = new com_reactivation();
 
@@ -261,7 +266,7 @@ public class persImpli implements persInterface {
                         String b22 = "" + mac + "              Auth-Type := CHAP\n";
                         String b23 = "Service-Type = Framed,";
                         String b24 = "Framed-Protocol = PPP,\n";
-                        String b25 = "Framed-IP-Address = 10.102." + j + "." + i + ",\n";
+                        String b25 = "Framed-IP-Address = 10.103." + j + "." + i + ",\n";
                         String b26 = "Framed-IP-Netmask = 255.255.255.255\n";
 //ajout in users
                         m = ssh5.runCommand1("sed -i '1i#" + b3 + "'   /etc/freeradius/users ");
@@ -424,7 +429,10 @@ public class persImpli implements persInterface {
             m = ssh.sh(vi);
             SSHConnectionJava3 ssh1 = new SSHConnectionJava3();
             m = ssh1.sh(vi);
-
+            clear_bel_lns l =new clear_bel_lns();
+           m= l.sh(vi);
+            clear_war_lns j=new clear_war_lns();
+           m= j.sh(vi);
             /* int j=  login_user.clear();*/
             System.out.println(vi);
             System.out.println(m);

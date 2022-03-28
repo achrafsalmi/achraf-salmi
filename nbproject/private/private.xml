@@ -2,6 +2,16 @@
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/home/serv-web/NetBeansProjects/Dark_Vador/web/S_com_fact_RM.jsp</file>
+            <file>file:/home/serv-web/NetBeansProjects/Dark_Vador/src/java/upload/up_fact_RM.java</file>
+            <file>file:/home/serv-web/NetBeansProjects/Dark_Vador/src/java/initiationjee/login_user.java</file>
+            <file>file:/home/serv-web/NetBeansProjects/Dark_Vador/src/java/verif/verif_rad_RM.java</file>
+            <file>file:/home/serv-web/NetBeansProjects/Dark_Vador/src/java/verif/verif_fact_RM.java</file>
+            <file>file:/home/serv-web/NetBeansProjects/Dark_Vador/src/java/initiationjee/dao/persInterface.java</file>
+            <file>file:/home/serv-web/NetBeansProjects/Dark_Vador/web/test.jsp</file>
+            <file>file:/home/serv-web/NetBeansProjects/Dark_Vador/src/java/initiationjee/dao/persImpli.java</file>
+            <file>file:/home/serv-web/NetBeansProjects/Dark_Vador/src/java/connexion/cnx_radius.java</file>
+        </group>
     </open-files>
 </project-private>

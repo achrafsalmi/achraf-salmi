@@ -139,7 +139,7 @@
                             <th>stop time</th>
                             <th>session time</th>
                             <th>adresse ip</th>
-                            <th>Id</th>
+                            <th>telephone</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -162,7 +162,7 @@
                             %>
                             <td><%out.println(hour + "h " + minute + "m " + seconde + "s");%></td>
                             <td><%=res.getString("framedipaddress")%></td>
-                            <td><%=res.getString("radacctid")%></td>
+                            <td><%=res.getString("tel_adsl")%></td>
                         </tr>
                         <%}%>
 
@@ -175,7 +175,7 @@
                             <th>stop time</th>
                             <th>session time</th>
                             <th>adresse ip</th>
-                            <th>Id</th>
+                            <th>telephone</th>
                         </tr>
                     </tfoot>
                 </table>   

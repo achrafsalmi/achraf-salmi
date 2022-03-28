@@ -143,7 +143,7 @@
                             <th>adresse ip</th>
                             <th>LNS</th>
                             <th>tel_xdsl</th>
-                            <th>Id</th>
+                            
                         </tr>
                     </thead>
                     <tbody>
@@ -173,7 +173,7 @@
                             out.println("lns_belvédère ip :"+nas);
                             }%></td>
                             <td><%=res.getString("tel_adsl")%></td>
-                            <td><%=res.getString("radacctid")%></td>
+                            
                         </tr>
                         <%}%>
 
@@ -188,7 +188,7 @@
                             <th>adresse ip</th>
                              <th>LNS</th>
                             <th>tel_xdsl</th>
-                            <th>Id</th>
+                           
                         </tr>
                     </tfoot>
                 </table>   

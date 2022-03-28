@@ -15,8 +15,10 @@ public class clear_test_war {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-       clear_war_lns l=new clear_war_lns();
-       l.sh("2.160");
+      /* clear_war_lns l=new clear_war_lns();
+       l.sh("2.2898");*/
+        clear_bel_lns l =new clear_bel_lns();
+        l.sh("2.275");
     }
     
 }

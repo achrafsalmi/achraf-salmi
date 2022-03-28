@@ -271,7 +271,7 @@ public class persImpli2 implements persInterface {
 
     @Override
     public String verif_auth(String verif) {
-       String sql ="select authdate,reply,raison from radpostauth WHERE  `username` LIKE '%"+verif+"%'";
+       String sql ="select authdate,reply,raison,mac from radpostauth WHERE  `username` LIKE '%"+verif+"%'";
         ResultSet res;
         String i=null;
         try {
@@ -281,7 +281,8 @@ public class persImpli2 implements persInterface {
              String k=  res.getString("authdate");
              String j=  res.getString("reply");
              String o=  res.getString("raison");
-             i=j+" "+k+" "+o;
+             String h=  res.getString("mac");
+             i=j+" "+k+" "+o+"\rMAC:"+h;
            }System.out.println(i);
                    } catch (SQLException e) {
             // TODO Auto-generated catch block
@@ -289,5 +290,6 @@ public class persImpli2 implements persInterface {
         }
         return i;
     }
+
     
 }

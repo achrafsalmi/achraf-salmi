@@ -1,3 +1,4 @@
+<%@page import="ssh_LNS_new.lns_bel_cnx"%>
 <%@page import="ssh_LNS_new.lns_war_cnx"%>
 <%@page import="verif.vérif_ip_fix"%>
 <%@page import="initiationjee.com_reactivation"%>
@@ -222,11 +223,15 @@
                           
                             SSHConnectionJava1ava1 ss = new SSHConnectionJava1ava1();
                                     m = ss.sh(n);
-                                    j="LNS bélvédére"+m;
+                                    j="LNS bélvédére_1"+m;
                         }if (m == null || m.isEmpty() || !m.contains("Vi2.")) {
                              lns_war_cnx ss = new lns_war_cnx();
                             m = ss.sh(n);
                             j = "LNS wardia_2" + m;
+                        }if (m == null || m.isEmpty() || !m.contains("Vi2.")) {
+                             lns_bel_cnx ss = new lns_bel_cnx();
+                            m = ss.sh(n);
+                            j = "LNS bélvédére_2" + m;
                         }
                         if (j.contains("Vi2.")) {
                         %>

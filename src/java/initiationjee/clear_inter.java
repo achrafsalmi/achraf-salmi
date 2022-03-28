@@ -10,6 +10,10 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import ssh_LNS_new.clear_bel_lns;
+import ssh_LNS_new.clear_war_lns;
+import ssh_LNS_new.lns_bel_cnx;
+import ssh_LNS_new.lns_war_cnx;
 
 public class clear_inter extends HttpServlet {
 
@@ -44,13 +48,28 @@ if (log!=null){
     
         SSHConnectionJava ssh3 = new SSHConnectionJava();
         k = ssh3.sh(n);
-        System.out.println(k);
+        System.out.println(k+"1");
+        System.out.println(n);
+        k=k.trim();
         if (k==null || !k.contains("Vi2.")){
         SSHConnectionJava1ava1 ssh4 = new SSHConnectionJava1ava1();
         k = ssh4.sh(n);
-            System.out.println(k);
+        k=k.trim();
+            System.out.println(k+"2");
+        } 
+        if (k==null || !k.contains("Vi2.")){
+            lns_war_cnx ssh4 = new lns_war_cnx();
+        k = ssh4.sh(n);
+        k=k.trim();
+            System.out.println(k+"3");
         }
-        
+        if(k==null || !k.contains("Vi2.")){
+            lns_bel_cnx ssh4 = new lns_bel_cnx();
+        k = ssh4.sh(n);
+        k=k.trim();
+            System.out.println(k+"4");
+        }
+        System.out.println(k+"5");
         int i =k.length();
         for(int j=4 ;j<i;j++){
         char s=k.charAt(j);
@@ -67,6 +86,10 @@ if (log!=null){
         m = ssh.sh(vi);
         SSHConnectionJava3 ssh1 = new SSHConnectionJava3();
         m = ssh1.sh(vi);
+         clear_bel_lns l =new clear_bel_lns();
+           m= l.sh(vi);
+            clear_war_lns j=new clear_war_lns();
+           m= j.sh(vi);
 String msg = "select * from Bee_net_tn WHERE `attribute` NOT LIKE 'Calling-Station-Id' AND `telephone` LIKE '%"+telephone+"%' OR `Login` LIKE '%"+telephone+"%' OR `Nom` LIKE '%"+telephone+"%' OR `CIN` LIKE '%"+telephone+"%'";
                         req.setAttribute("msg", msg);
         req.getRequestDispatcher("radius_bee_net.jsp").forward(req, resp);
